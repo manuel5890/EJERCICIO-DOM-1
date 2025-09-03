@@ -29,6 +29,11 @@ function moverAbajo(){
         figura.style.transform = "translateY(100px)"; 
 }
 
+function moverIzquierda(){
+        figura.style.transition = "all 0.5s ease-in-out"; 
+        figura.style.transform = "translateX(-100px)"; 
+}
+
 
 
 
