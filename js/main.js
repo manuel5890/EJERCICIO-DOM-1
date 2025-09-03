@@ -34,7 +34,10 @@ function moverIzquierda(){
         figura.style.transform = "translateX(-100px)"; 
 }
 
-
+function moverDerecha(){
+        figura.style.transition = "all 0.5s ease-in-out"; 
+        figura.style.transform = "translateX(100px)"; 
+}
 
 
 
