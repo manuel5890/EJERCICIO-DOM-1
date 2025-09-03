@@ -39,6 +39,14 @@ function moverDerecha(){
         figura.style.transform = "translateX(100px)"; 
 }
 
+function titulo(){
+    const Ntitulo = prompt('ingrese el nuevo titulo');
+    const texto = document.getElementById('mainTitle');
+
+    texto.innerText = Ntitulo
+}
+
+
 
 
 
@@ -55,10 +63,10 @@ document.addEventListener('DOMContentLoaded',function(){
     document.getElementById('btnMoveDown').addEventListener('click' , moverAbajo);
     document.getElementById('btnMoveLeft').addEventListener('click' , moverIzquierda);
     document.getElementById('btnMoveRight').addEventListener('click' , moverDerecha);
-    document.getElementById('btnCircle').addEventListener('click' , circulo);
-    document.getElementById('btnCircle').addEventListener('click' , circulo);
-    document.getElementById('btnCircle').addEventListener('click' , circulo);
-    document.getElementById('btnCircle').addEventListener('click' , circulo);
+    document.getElementById('btnChangeTitle').addEventListener('click' , titulo);
+    document.getElementById('btnChangeParagraph').addEventListener('click' , parrafo);
+    document.getElementById('btnAddParagraph').addEventListener('click' , circulo);
+    document.getElementById('btnRemoveParagraph').addEventListener('click' , circulo);
     document.getElementById('btnCircle').addEventListener('click' , circulo);
     document.getElementById('btnCircle').addEventListener('click' , circulo);
     document.getElementById('btnCircle').addEventListener('click' , circulo);
