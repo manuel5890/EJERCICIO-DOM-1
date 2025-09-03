@@ -46,6 +46,13 @@ function titulo(){
     texto.innerText = Ntitulo
 }
 
+function parrafo(){
+    const nParrafo = prompt('ingrese el nuevo parrafo');
+    const texto = document.getElementById('mainParagraph');
+
+    texto.innerText = nParrafo
+}
+
 
 
 
