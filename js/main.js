@@ -14,6 +14,10 @@ function gift(){
           figura.style.background = "url('https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif')";
 }
 
+function animacion(){
+        figura.style.transition = "all 1s ease-in-out";
+        figura.style.transform = "rotate(360deg) scale(1.5)";
+}
 
 
 
