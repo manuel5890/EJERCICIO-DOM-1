@@ -19,6 +19,12 @@ function animacion(){
         figura.style.transform = "rotate(360deg) scale(1.5)";
 }
 
+function moverArriba(){
+        figura.style.transition = "all 0.5s ease-in-out"; 
+        figura.style.transform = "translateY(-100px)"; 
+}
+
+
 
 
 
