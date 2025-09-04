@@ -112,3 +112,7 @@ img{
         transform: rotate(360deg) scale(1);
     }
 }
+
+#mainImage.none{
+  display: none;
+}

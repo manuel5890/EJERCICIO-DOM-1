@@ -123,6 +123,11 @@ function imagenesAtras() {
     mainImagen.setAttribute("src", anterior);
 }
 
+function ocultar(){
+    const img = document.getElementById('mainImage');
+    img.classList.toggle('none');
+}
+
 
 
 
@@ -146,5 +151,10 @@ document.addEventListener('DOMContentLoaded',function(){
     document.getElementById('btnChooseFigure').addEventListener('click' , elegirFigura);
     document.getElementById('btnChangeImageNext').addEventListener('click' , imagenes1);
     document.getElementById('btnChangeImagePrev').addEventListener('click' , imagenesAtras);
-
+    document.getElementById('btnToggleImage').addEventListener('click' , ocultar);
+    document.getElementById('btnChangeAlt').addEventListener('click' , cambiarAlt);  
+    document.getElementById('btnChangeLink').addEventListener('click' , cambiarEnlace); 
+    document.getElementById('btnOpenLink').addEventListener('click' , abrirEnlace);
+    document.getElementById('btnDisableLink').addEventListener('click' , imagenesAtras);
+  
 })
