@@ -15,8 +15,7 @@ function gift(){
 }
 
 function animacion(){
-        figura.style.transition = "all 1s ease-in-out";
-        figura.style.transform = "rotate(360deg) scale(1.5)";
+        figura.style.animation = "girar 2s linear infinite";
 }
 
 function moverArriba(){
@@ -87,7 +86,23 @@ function elegirFigura(){
     }
 }
 
+function imagenes1(){
+    const mainImagen = document.getElementById('mainImage');
+    let imagenes = ['img/imagen.jpg','img/imagen2.jpg','img/imagen3.jpg'];
+    let actual = mainImagen.getAttribute("src");
+    let siguite = imagenes[0];
 
+    imagenes.forEach((imagen,index) => {
+        if (actual===imagen) {
+            if (index<imagenes.length - 1) {
+                siguite=imagenes[index + 1];
+            } else{
+                siguite = imagenes[0];
+            }
+        }
+    });
+    mainImagen.setAttribute("src",siguite);
+}
 
 
 
@@ -108,7 +123,7 @@ document.addEventListener('DOMContentLoaded',function(){
     document.getElementById('btnRemoveParagraph').addEventListener('click' , borrarParrafo);
     document.getElementById('btnHexColor').addEventListener('click' , cambiarColor);
     document.getElementById('btnChooseFigure').addEventListener('click' , elegirFigura);
-    document.getElementById('btnChangeImageNext').addEventListener('click' , circulo);
+    document.getElementById('btnChangeImageNext').addEventListener('click' , imagenes1);
     document.getElementById('btnChangeImagePrev').addEventListener('click' , circulo);
 
 })
