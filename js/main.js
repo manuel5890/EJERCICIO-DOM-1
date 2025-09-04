@@ -65,6 +65,11 @@ function borrarParrafo(){
     parrafo.remove();
 }
 
+function cambiarColor(){
+    const color = prompt('ingrese el color con #');
+    figura.style.backgroundColor= color
+}
+
 
 
 
