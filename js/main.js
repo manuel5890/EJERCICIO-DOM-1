@@ -145,6 +145,11 @@ function abrirEnlace(){
     enlace.setAttribute("target","_blank")
 }
 
+function deshabilitar(){
+    let enlace = document.getElementById('mainLink');
+    enlace.removeAttribute("href");
+}
+
 
 
 
@@ -170,6 +175,5 @@ document.addEventListener('DOMContentLoaded',function(){
     document.getElementById('btnChangeAlt').addEventListener('click' , cambiarAlt);  
     document.getElementById('btnChangeLink').addEventListener('click' , cambiarEnlace); 
     document.getElementById('btnOpenLink').addEventListener('click' , abrirEnlace);
-    document.getElementById('btnDisableLink').addEventListener('click' , imagenesAtras);
-  
+    document.getElementById('btnDisableLink').addEventListener('click' , deshabilitar);
 })
