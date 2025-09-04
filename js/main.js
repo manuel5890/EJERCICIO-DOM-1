@@ -53,7 +53,12 @@ function parrafo(){
     texto.innerText = nParrafo
 }
 
-
+function parrafoNuevo(){
+    const nuevoParrafo = prompt('ingrese el nuevo parrafo')
+    const parrafo = document.createElement("p");
+    parrafo.textContent = nuevoParrafo
+    rutaTexto = document.getElementById('extraParagraphs').appendChild(parrafo);
+}
 
 
 
@@ -72,10 +77,11 @@ document.addEventListener('DOMContentLoaded',function(){
     document.getElementById('btnMoveRight').addEventListener('click' , moverDerecha);
     document.getElementById('btnChangeTitle').addEventListener('click' , titulo);
     document.getElementById('btnChangeParagraph').addEventListener('click' , parrafo);
-    document.getElementById('btnAddParagraph').addEventListener('click' , circulo);
-    document.getElementById('btnRemoveParagraph').addEventListener('click' , circulo);
-    document.getElementById('btnCircle').addEventListener('click' , circulo);
-    document.getElementById('btnCircle').addEventListener('click' , circulo);
-    document.getElementById('btnCircle').addEventListener('click' , circulo);
+    document.getElementById('btnAddParagraph').addEventListener('click' , parrafoNuevo);
+    document.getElementById('btnRemoveParagraph').addEventListener('click' , borrarParrafo);
+    document.getElementById('btnHexColor').addEventListener('click' , cambiarColor);
+    document.getElementById('btnChooseFigure').addEventListener('click' , elegirFigura);
+    document.getElementById('btnChangeImageNext').addEventListener('click' , circulo);
+    document.getElementById('btnChangeImagePrev').addEventListener('click' , circulo);
 
 })
