@@ -134,6 +134,12 @@ function cambiarAlt(){
     img.setAttribute("alt",newImg);
 }
 
+function cambiarEnlace(){
+    newUrl = prompt('ingrese la nueva URL');
+    const url = document.getElementById('mainLink');
+    url.setAttribute("href",newUrl);
+}
+
 
 
 
