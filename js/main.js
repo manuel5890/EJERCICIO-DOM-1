@@ -104,6 +104,27 @@ function imagenes1(){
     mainImagen.setAttribute("src",siguite);
 }
 
+function imagenesAtras() {
+    const mainImagen = document.getElementById('mainImage');
+    let imagenes = ['img/imagen.jpg','img/imagen2.jpg','img/imagen3.jpg'];
+    let actual = mainImagen.getAttribute("src");
+    let anterior = imagenes[imagenes.length - 1]; // Por defecto, la última imagen
+
+    imagenes.forEach((imagen, index) => {
+        if (actual === imagen) {
+            if (index > 0) {
+                anterior = imagenes[index - 1];
+            } else {
+                anterior = imagenes[imagenes.length - 1];
+            }
+        }
+    });
+
+    mainImagen.setAttribute("src", anterior);
+}
+
+
+
 
 
 
@@ -124,6 +145,6 @@ document.addEventListener('DOMContentLoaded',function(){
     document.getElementById('btnHexColor').addEventListener('click' , cambiarColor);
     document.getElementById('btnChooseFigure').addEventListener('click' , elegirFigura);
     document.getElementById('btnChangeImageNext').addEventListener('click' , imagenes1);
-    document.getElementById('btnChangeImagePrev').addEventListener('click' , circulo);
+    document.getElementById('btnChangeImagePrev').addEventListener('click' , imagenesAtras);
 
 })
