@@ -60,6 +60,11 @@ function parrafoNuevo(){
     rutaTexto = document.getElementById('extraParagraphs').appendChild(parrafo);
 }
 
+function borrarParrafo(){
+    const parrafo = document.querySelector('#extraParagraphs');
+    parrafo.remove();
+}
+
 
 
 
