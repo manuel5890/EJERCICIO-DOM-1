@@ -128,6 +128,12 @@ function ocultar(){
     img.classList.toggle('none');
 }
 
+function cambiarAlt(){
+    newImg = prompt('ingrese el nuevo texto');
+    const img = document.getElementById('mainImage');
+    img.setAttribute("alt",newImg);
+}
+
 
 
 
