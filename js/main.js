@@ -140,7 +140,10 @@ function cambiarEnlace(){
     url.setAttribute("href",newUrl);
 }
 
-
+function abrirEnlace(){
+    let enlace = document.getElementById('mainLink');
+    enlace.setAttribute("target","_blank")
+}
 
 
 
